@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title> 
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+    <span style="color:#f87171;">TO DO LIST</span> - remember your daily tasks.
+    </nav>
+    <div id="task_add">
+        <div class="sign">+</div>
+        <div id="text" onclick="add()">Add a Task</div>
+    </div>
+<!--nav bar-->
+<div class="navbar">
+    <div class="navbar-inner">
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  
+ <!-- container -->
+ <div id="container">
+    <div id="container1">
+    
+     </div>
+     <div id="container2">
+        <div class="sign" style="background-color: rgb(175, 174, 174);margin-left: 25%;"><img src="Arrow.webp" height="20px" width="22px"></div>
+        <div style="display:inline;font-size: large;margin-left: 1%;font-family: sans-serif;cursor: pointer;" onclick="back()">Back</div>
+        <div class="sign" style="margin-left:20%">+</div>
+        <div style="display:inline;font-size: large;margin-left: 1%;font-family: sans-serif;cursor: pointer;" onclick="add_item()">Add work</div>
+        <div id="container3" style="justify-content:center;margin-top: 5%;">
+            <div class="box">
+        <div class="box_nav">
+        </div>
+        <div class="box-item">
+            <ul type="none">
+            </ul>
+        </div>
+     </div>
+
+     <!-- add item box -->
+     <div id="item_window" >
+        <div id="navbar_item">
+            <span>Add new work</span>
+            <div style="padding-left:70%;font-size:x-large;font-weight: bold;cursor: pointer;display: inline;" onclick="cut2()">X</div>
+        </div>
+        <input type="text" placeholder="TYPE YOUR NEW Item" id="item_name">
+        <button type="submit" onclick="addItem()">+ Add work</button>
+     </div>
+
+
+     </div>
+     </div>
+ </div>
+ <!--copyright-->
+ <div class="footer">  
+    @Copyright To-do-List 2022- All Right Reserved.   
+    </div>
+
+ 
+ <div id="task_window">
+    <div id="nav_task">
+        <span>Add New Task</span>
+        <div style="padding-left:70%;font-size:x-large;font-weight: bold;cursor: pointer;display: inline;" onclick="cut()">X</div>
+    </div>
+    <input type="text" placeholder="TYPE YOUR NEW TASK" id="task_name">
+    <button type="submit" onclick="addTask()">+ Add Task</button>
+ </div>
+
+<div id="box2"></div>
+    <script src="script.js"></script>
+</body>
+</html>

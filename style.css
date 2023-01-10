@@ -1,0 +1,239 @@
+body{
+    background-color: rgb(244, 192, 192);
+    margin: 0%;
+}
+.sign{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #00a5ec;
+    color: rgb(236, 230, 230);
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer {  
+  position: fixed;  
+  left: 10px;  
+  bottom: 0px;  
+  right: 10px;   
+  width: 100%;  
+  background-color: gray;  
+  color: white;  
+  text-align: center;  
+  }  
+nav{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(250, 249, 249);
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10%;
+    box-shadow: 0px 0px 30px #f4f3f329;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    display: inline-block;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0px auto;
+  }
+  /* The navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Main content */
+  .main {
+    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+  }
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: rgb(10, 10, 10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  
+#text{
+    display: inline;
+    font-size: larger;
+    margin-left: 0.7%;
+    cursor: pointer;
+}
+#task_add{
+    margin-top: 1%;
+    text-align: end;
+    padding-right: 3%;
+}
+#container{
+    margin: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    position:relative;
+}
+#container1,#container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#container2{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#task_window,#item_window{
+    background-color: rgb(252, 249, 249);
+    width: 500px;
+    height: 230px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-left: 30%;
+    position: absolute;
+    top: 34%;
+    visibility: hidden;
+    z-index: 1;
+}
+#nav_task,#navbar_item{
+    border-bottom: solid 1px rgb(249, 246, 246);
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: larger;
+}
+#task_window input,#item_name{
+    display: block;
+    margin-top: 6%;
+    margin-left: 4%;
+    height: 36px;
+    font-size: larger;
+    width: 88%;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+#task_window button,#item_window button{
+background-color: #00a5ec;
+border: none;
+color: white;
+margin-top: 4%;
+height: 45px;
+width: 35%;
+position: absolute;
+right: 7%;
+font-size: large;
+border-radius: 10px;
+cursor: pointer;
+}
+.box{
+    background-color: white;
+    min-height: 265px;
+    width: 280px;
+    border-radius: 13px;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+.box:hover{
+    box-shadow: 0px 0px 30px #00000029;
+}
+.box_nav{
+    font-family: cursive;
+    color: #00a5ec;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: solid 1px lightgray;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+li{
+    padding-bottom: 4%;
+    font-size: larger;
+}
+#box2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(19, 18, 18, 0.7);
+    visibility: hidden;
+}
